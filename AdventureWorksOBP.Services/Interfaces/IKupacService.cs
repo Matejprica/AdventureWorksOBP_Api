@@ -10,7 +10,7 @@ namespace AdventureWorksOBP.Services.Interfaces
     {
         //Task CreateKupac(Kupac kupac);
         Task<Kupac> ReadKupac(int id);
-        Task<IEnumerable<Kupac>> ReadAllKupci(int count);
+        Task<IEnumerable<Kupac>> ReadAllKupci(int skip, int count);
         //Task UpdateKupac(Kupac kupac);
         //Task DeleteKupac(Kupac kupac);
     }

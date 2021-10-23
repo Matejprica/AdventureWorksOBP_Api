@@ -18,9 +18,9 @@ namespace AdventureWorksOBP.Services.Services
             this.kupacRepository = kupacRepository;
         }
 
-        public async Task<IEnumerable<Kupac>> ReadAllKupci(int count)
+        public async Task<IEnumerable<Kupac>> ReadAllKupci(int skip, int count)
         => await kupacRepository
-            .ReadAll(count)
+            .ReadAll(skip, count)
             .ToListAsync();
 
 

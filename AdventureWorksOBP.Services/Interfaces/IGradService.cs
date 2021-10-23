@@ -10,7 +10,7 @@ namespace AdventureWorksOBP.Services.Interfaces
     {
         //Task CreateGrad(Grad grad);
         Task<Grad> ReadGrad(int id);
-        Task<IEnumerable<Grad>> ReadAllGradovi(int count);
+        Task<IEnumerable<Grad>> ReadAllGradovi(int skip, int count);
         //Task UpdateKupac(Grad grad);
         //Task DeleteKupac(Grad grad);
     }
