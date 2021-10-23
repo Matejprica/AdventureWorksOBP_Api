@@ -1,25 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\_Programi\\AdventueWorksOBP_API\\AdventureWorksOBP.Data\\AdventureWorksOBP.Data.csproj": {}
+    "D:\\_Prog\\AdventureWorksOBP_Api\\AdventureWorksOBP.Data\\AdventureWorksOBP.Data.csproj": {}
   },
   "projects": {
-    "D:\\_Programi\\AdventueWorksOBP_API\\AdventureWorksOBP.Data\\AdventureWorksOBP.Data.csproj": {
+    "D:\\_Prog\\AdventureWorksOBP_Api\\AdventureWorksOBP.Data\\AdventureWorksOBP.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\_Programi\\AdventueWorksOBP_API\\AdventureWorksOBP.Data\\AdventureWorksOBP.Data.csproj",
+        "projectUniqueName": "D:\\_Prog\\AdventureWorksOBP_Api\\AdventureWorksOBP.Data\\AdventureWorksOBP.Data.csproj",
         "projectName": "AdventureWorksOBP.Data",
-        "projectPath": "D:\\_Programi\\AdventueWorksOBP_API\\AdventureWorksOBP.Data\\AdventureWorksOBP.Data.csproj",
+        "projectPath": "D:\\_Prog\\AdventureWorksOBP_Api\\AdventureWorksOBP.Data\\AdventureWorksOBP.Data.csproj",
         "packagesPath": "C:\\Users\\Matej\\.nuget\\packages\\",
-        "outputPath": "D:\\_Programi\\AdventueWorksOBP_API\\AdventureWorksOBP.Data\\obj\\",
+        "outputPath": "D:\\_Prog\\AdventureWorksOBP_Api\\AdventureWorksOBP.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\Matej\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -75,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.208\\RuntimeIdentifierGraph.json"
         }
       }
     }

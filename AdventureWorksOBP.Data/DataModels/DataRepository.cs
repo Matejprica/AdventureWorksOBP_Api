@@ -62,8 +62,8 @@ namespace AdventureWorksOBP.Data.DataModels
         }
 
 
-        public IQueryable<T> ReadAll(int count)
-            => context.Set<T>().Take(count); 
+        public IQueryable<T> ReadAll(int skip, int count)
+            => context.Set<T>().Skip(skip).Take(count); 
 
         public async Task Update(T entity)
         {

@@ -50,11 +50,11 @@ namespace AdventueWorksOBP_API.Controllers
 
         [HttpGet]
         [Route("ReadKupci")]
-        public async Task<ActionResult<ReadKupciDto>> ReadKupci(int count)
+        public async Task<ActionResult<ReadKupciDto>> ReadKupci(int skip, int count)
         {
             try
             {
-                var result = await kupacService.ReadAllKupci(count);
+                var result = await kupacService.ReadAllKupci(skip, count);
 
                 if (result == null)
                     return NotFound();

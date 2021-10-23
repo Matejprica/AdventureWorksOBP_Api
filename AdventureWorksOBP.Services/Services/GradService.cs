@@ -18,8 +18,8 @@ namespace AdventureWorksOBP.Services.Services
             this.gradRepository = gradRepository;
         }
 
-        public async Task<IEnumerable<Grad>> ReadAllGradovi(int count)
-            => await gradRepository.ReadAll(count).ToListAsync();
+        public async Task<IEnumerable<Grad>> ReadAllGradovi(int skip, int count)
+            => await gradRepository.ReadAll(skip, count).ToListAsync();
 
         public async Task<Grad> ReadGrad(int id)
             => await gradRepository.Read(g => g.Id == id).FirstOrDefaultAsync();
