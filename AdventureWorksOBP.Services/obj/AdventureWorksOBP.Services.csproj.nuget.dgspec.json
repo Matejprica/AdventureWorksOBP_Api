@@ -1,23 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\_Prog\\AdventureWorksOBP_Api\\AdventureWorksOBP.Services\\AdventureWorksOBP.Services.csproj": {}
+    "D:\\_Programi\\AdventureWorksOBP_Api\\AdventureWorksOBP.Services\\AdventureWorksOBP.Services.csproj": {}
   },
   "projects": {
-    "D:\\_Prog\\AdventureWorksOBP_Api\\AdventureWorksOBP.Data\\AdventureWorksOBP.Data.csproj": {
+    "D:\\_Programi\\AdventureWorksOBP_Api\\AdventureWorksOBP.Data\\AdventureWorksOBP.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\_Prog\\AdventureWorksOBP_Api\\AdventureWorksOBP.Data\\AdventureWorksOBP.Data.csproj",
+        "projectUniqueName": "D:\\_Programi\\AdventureWorksOBP_Api\\AdventureWorksOBP.Data\\AdventureWorksOBP.Data.csproj",
         "projectName": "AdventureWorksOBP.Data",
-        "projectPath": "D:\\_Prog\\AdventureWorksOBP_Api\\AdventureWorksOBP.Data\\AdventureWorksOBP.Data.csproj",
+        "projectPath": "D:\\_Programi\\AdventureWorksOBP_Api\\AdventureWorksOBP.Data\\AdventureWorksOBP.Data.csproj",
         "packagesPath": "C:\\Users\\Matej\\.nuget\\packages\\",
-        "outputPath": "D:\\_Prog\\AdventureWorksOBP_Api\\AdventureWorksOBP.Data\\obj\\",
+        "outputPath": "D:\\_Programi\\AdventureWorksOBP_Api\\AdventureWorksOBP.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\Matej\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -73,24 +75,26 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.208\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\_Prog\\AdventureWorksOBP_Api\\AdventureWorksOBP.Services\\AdventureWorksOBP.Services.csproj": {
+    "D:\\_Programi\\AdventureWorksOBP_Api\\AdventureWorksOBP.Services\\AdventureWorksOBP.Services.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\_Prog\\AdventureWorksOBP_Api\\AdventureWorksOBP.Services\\AdventureWorksOBP.Services.csproj",
+        "projectUniqueName": "D:\\_Programi\\AdventureWorksOBP_Api\\AdventureWorksOBP.Services\\AdventureWorksOBP.Services.csproj",
         "projectName": "AdventureWorksOBP.Services",
-        "projectPath": "D:\\_Prog\\AdventureWorksOBP_Api\\AdventureWorksOBP.Services\\AdventureWorksOBP.Services.csproj",
+        "projectPath": "D:\\_Programi\\AdventureWorksOBP_Api\\AdventureWorksOBP.Services\\AdventureWorksOBP.Services.csproj",
         "packagesPath": "C:\\Users\\Matej\\.nuget\\packages\\",
-        "outputPath": "D:\\_Prog\\AdventureWorksOBP_Api\\AdventureWorksOBP.Services\\obj\\",
+        "outputPath": "D:\\_Programi\\AdventureWorksOBP_Api\\AdventureWorksOBP.Services\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
           "C:\\Users\\Matej\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -104,8 +108,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "D:\\_Prog\\AdventureWorksOBP_Api\\AdventureWorksOBP.Data\\AdventureWorksOBP.Data.csproj": {
-                "projectPath": "D:\\_Prog\\AdventureWorksOBP_Api\\AdventureWorksOBP.Data\\AdventureWorksOBP.Data.csproj"
+              "D:\\_Programi\\AdventureWorksOBP_Api\\AdventureWorksOBP.Data\\AdventureWorksOBP.Data.csproj": {
+                "projectPath": "D:\\_Programi\\AdventureWorksOBP_Api\\AdventureWorksOBP.Data\\AdventureWorksOBP.Data.csproj"
               }
             }
           }
@@ -134,7 +138,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.208\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
