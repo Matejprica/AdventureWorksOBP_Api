@@ -22,7 +22,8 @@ namespace AdventureWorksOBP.Services.Services
         => await kupacRepository
             .ReadAll(skip, count)
             .ToListAsync();
-        //dobro koji kurac vise
+
+
         public async Task<Kupac> ReadKupac(int id)
         => await kupacRepository
             .Read(k => k.Id == id)
