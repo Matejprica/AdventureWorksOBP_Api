@@ -23,7 +23,6 @@ namespace AdventureWorksOBP.Services.Services
             .ReadAll(skip, count)
             .ToListAsync();
 
-        //test kom
         public async Task<Kupac> ReadKupac(int id)
         => await kupacRepository
             .Read(k => k.Id == id)
