@@ -12,7 +12,7 @@ namespace AdventureWorksOBP.Data.Specifications
             : base(x => x.Id == id)
         {
             AddInclude(x => x.Grad);
-            AddInclude(x => x.Grad.Naziv);
+            AddInclude(x => x.Racuni);
         }
     }
 }

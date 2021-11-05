@@ -22,3 +22,15 @@ D:\_Prog\AdventureWorksOBP_Api\AdventureWorksOBP.Services\obj\Debug\netcoreapp3.
 D:\_Prog\AdventureWorksOBP_Api\AdventureWorksOBP.Services\obj\Debug\netcoreapp3.1\AdventureWorksOBP.Services.csproj.CopyComplete
 D:\_Prog\AdventureWorksOBP_Api\AdventureWorksOBP.Services\obj\Debug\netcoreapp3.1\AdventureWorksOBP.Services.dll
 D:\_Prog\AdventureWorksOBP_Api\AdventureWorksOBP.Services\obj\Debug\netcoreapp3.1\AdventureWorksOBP.Services.pdb
+D:\_Programi\AdventureWorksOBP_Api\AdventureWorksOBP.Services\bin\Debug\netcoreapp3.1\AdventureWorksOBP.Services.deps.json
+D:\_Programi\AdventureWorksOBP_Api\AdventureWorksOBP.Services\bin\Debug\netcoreapp3.1\AdventureWorksOBP.Services.dll
+D:\_Programi\AdventureWorksOBP_Api\AdventureWorksOBP.Services\bin\Debug\netcoreapp3.1\AdventureWorksOBP.Services.pdb
+D:\_Programi\AdventureWorksOBP_Api\AdventureWorksOBP.Services\bin\Debug\netcoreapp3.1\AdventureWorksOBP.Data.dll
+D:\_Programi\AdventureWorksOBP_Api\AdventureWorksOBP.Services\bin\Debug\netcoreapp3.1\AdventureWorksOBP.Data.pdb
+D:\_Programi\AdventureWorksOBP_Api\AdventureWorksOBP.Services\obj\Debug\netcoreapp3.1\AdventureWorksOBP.Services.csprojAssemblyReference.cache
+D:\_Programi\AdventureWorksOBP_Api\AdventureWorksOBP.Services\obj\Debug\netcoreapp3.1\AdventureWorksOBP.Services.AssemblyInfoInputs.cache
+D:\_Programi\AdventureWorksOBP_Api\AdventureWorksOBP.Services\obj\Debug\netcoreapp3.1\AdventureWorksOBP.Services.AssemblyInfo.cs
+D:\_Programi\AdventureWorksOBP_Api\AdventureWorksOBP.Services\obj\Debug\netcoreapp3.1\AdventureWorksOBP.Services.csproj.CoreCompileInputs.cache
+D:\_Programi\AdventureWorksOBP_Api\AdventureWorksOBP.Services\obj\Debug\netcoreapp3.1\AdventureWorksOBP.Services.csproj.CopyComplete
+D:\_Programi\AdventureWorksOBP_Api\AdventureWorksOBP.Services\obj\Debug\netcoreapp3.1\AdventureWorksOBP.Services.dll
+D:\_Programi\AdventureWorksOBP_Api\AdventureWorksOBP.Services\obj\Debug\netcoreapp3.1\AdventureWorksOBP.Services.pdb
