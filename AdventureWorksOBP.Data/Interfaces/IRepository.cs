@@ -13,6 +13,7 @@ namespace AdventureWorksOBP.Data.Interfaces
         Task Create(T entity);
         IQueryable<T> ReadAll(int skip, int count);
         IQueryable<T> Read(Expression<Func<T, bool>> expression);
+        Task<T> ReadBySpec(ISpecification<T> spec);
         Task Update(T entity);
         Task Delete(T entity);
 

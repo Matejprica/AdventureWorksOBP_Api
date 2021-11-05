@@ -26,26 +26,41 @@ namespace AdventueWorksOBP_API.Controllers
         [Route("ReadKupac")]
         public async Task<ActionResult<ReadKupacDto>> ReadKupac(int id)
         {
-            var result = await kupacService.ReadKupac(id);
-
-            if (result == null)
-                return NotFound();
-
-            var grad = await gradService.ReadGrad((int)result.GradId);
-
-            return new ReadKupacDto
+            try
             {
-                Id = result.Id,
-                Ime = result.Ime,
-                Prezime = result.Prezime,
-                Email = result.Email,
-                Telefon = result.Telefon,
-                Grad = new GradDto { 
-                    Id = grad.Id,
-                    Naziv = grad.Naziv
-                },
-                Racuni = null
-            };
+                var result = await kupacService.ReadKupac(id);
+
+                if (result == null)
+                    return NotFound();
+
+                List<RacunDto> racuni = new List<RacunDto>();
+                racuni = result.Racuni.Select(x => new RacunDto { 
+                    BrojRacuna = x.BrojRacuna,
+                    DatumIzdavanja = x.DatumIzdavanja,
+                    Komentar = x.Komentar
+                }).ToList();
+
+                var projected = new ReadKupacDto
+                {
+                    Id = result.Id,
+                    Ime = result.Ime,
+                    Prezime = result.Prezime,
+                    Email = result.Email,
+                    Telefon = result.Telefon,
+                    Grad = new GradDto
+                    {
+                        Id = result.Grad.Id,
+                        Naziv = result.Grad.Naziv
+                    },
+                    Racuni = racuni
+                };
+
+                return Ok(projected);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpGet]

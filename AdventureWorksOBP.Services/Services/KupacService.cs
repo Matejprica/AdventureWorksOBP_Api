@@ -1,5 +1,6 @@
 ﻿using AdventureWorksOBP.Data.Interfaces;
 using AdventureWorksOBP.Data.Models;
+using AdventureWorksOBP.Data.Specifications;
 using AdventureWorksOBP.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -26,7 +27,7 @@ namespace AdventureWorksOBP.Services.Services
 
         public async Task<Kupac> ReadKupac(int id)
         => await kupacRepository
-            .Read(k => k.Id == id)
-            .FirstOrDefaultAsync();
+            .ReadBySpec(new GetKupacSpecification(id));
+
     }
 }
