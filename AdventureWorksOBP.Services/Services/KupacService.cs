@@ -21,9 +21,7 @@ namespace AdventureWorksOBP.Services.Services
 
         public async Task<IEnumerable<Kupac>> ReadAllKupci(int skip, int count)
         => await kupacRepository
-            .ReadAll(skip, count)
-            .ToListAsync();
-
+            .ReadAllBySpec(new GetAllKupciBySpec(), skip, count);
 
         public async Task<Kupac> ReadKupac(int id)
         => await kupacRepository

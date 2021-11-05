@@ -14,12 +14,10 @@ namespace AdventueWorksOBP_API.Controllers
     public class KupacController : ControllerBase
     {
         private readonly IKupacService kupacService;
-        private readonly IGradService gradService;
-
+        
         public KupacController(IKupacService kupacService, IGradService gradService)
         {
             this.kupacService = kupacService;
-            this.gradService = gradService;
         }
 
         [HttpGet]
@@ -33,13 +31,6 @@ namespace AdventueWorksOBP_API.Controllers
                 if (result == null)
                     return NotFound();
 
-                List<RacunDto> racuni = new List<RacunDto>();
-                racuni = result.Racuni.Select(x => new RacunDto { 
-                    BrojRacuna = x.BrojRacuna,
-                    DatumIzdavanja = x.DatumIzdavanja,
-                    Komentar = x.Komentar
-                }).ToList();
-
                 var projected = new ReadKupacDto
                 {
                     Id = result.Id,
@@ -52,8 +43,13 @@ namespace AdventueWorksOBP_API.Controllers
                         Id = result.Grad.Id,
                         Naziv = result.Grad.Naziv
                     },
-                    Racuni = racuni
-                };
+                    Racuni = result.Racuni.Select(r => new RacunDto
+                    {
+                        BrojRacuna = r.BrojRacuna,
+                        DatumIzdavanja = r.DatumIzdavanja,
+                        Komentar = r.Komentar
+                    }).ToList()
+            };
 
                 return Ok(projected);
             }
@@ -74,7 +70,7 @@ namespace AdventueWorksOBP_API.Controllers
                 if (result == null)
                     return NotFound();
 
-                return new ReadKupciDto
+                var projected = new ReadKupciDto
                 {
                     Kupci = result.Select(k => new ReadKupacDto
                     {
@@ -83,10 +79,21 @@ namespace AdventueWorksOBP_API.Controllers
                         Prezime = k.Prezime,
                         Email = k.Email,
                         Telefon = k.Telefon,
-                        Grad = null,
-                        Racuni = null
+                        Grad = new GradDto
+                        {
+                            Id = k.Grad.Id,
+                            Naziv = k.Grad.Naziv
+                        },
+                        Racuni = k.Racuni.Select(r => new RacunDto
+                        {
+                            BrojRacuna = r.BrojRacuna,
+                            DatumIzdavanja = r.DatumIzdavanja,
+                            Komentar = r.Komentar
+                        }).ToList()
                     }).ToList()
                 };
+
+                return Ok(projected);
             }
             catch (Exception ex)
             {
