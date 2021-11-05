@@ -48,10 +48,10 @@ namespace AdventureWorksOBP.Data.DataModels
             return await secondaryResult.Where(spec.Criteria).FirstOrDefaultAsync();
         }
 
-        public async Task<IEnumerable<T>> ReadAllBySpec(ISpecification<T> spec, int count)
+        public async Task<IEnumerable<T>> ReadAllBySpec(ISpecification<T> spec, int skip, int count)
         {
             var queryableResultWithIncludes = spec.Includes
-                .Aggregate(context.Set<T>().AsNoTracking().AsQueryable().Take(count),
+                .Aggregate(context.Set<T>().AsNoTracking().AsQueryable().Skip(skip).Take(count),
                 (current, include) => current.Include(include));
 
             var secondaryResult = spec.IncludeStrings
