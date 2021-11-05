@@ -26,7 +26,7 @@ namespace AdventureWorksOBP.Services.Services
 
         public async Task<Kupac> ReadKupac(int id)
         => await kupacRepository
-            .Read(k => k.Id == id)
-            .FirstOrDefaultAsync();
+            .ReadBySpec(new GetKupacSpecification(id));
+
     }
 }
