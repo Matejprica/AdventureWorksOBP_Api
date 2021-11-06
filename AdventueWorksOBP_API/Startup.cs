@@ -32,6 +32,9 @@ namespace AdventueWorksOBP_API
             services.AddRepository();
             services.AddTransientServices();
 
+            services.AddCors();
+
+            services.AddMvc();
             //Register swagger
             services.AddSwaggerGen(c => 
             {
@@ -46,6 +49,13 @@ namespace AdventueWorksOBP_API
             {
                 app.UseDeveloperExceptionPage();
             }
+
+            app.UseCors(builder => builder
+                .AllowAnyOrigin()
+                .AllowAnyMethod()
+                .AllowAnyHeader()
+            );
+
 
             //Enable middleware to serve generated Swagger as a JSON endpoint
             app.UseSwagger();
